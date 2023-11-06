@@ -30,7 +30,10 @@ def laskin():
 		elif valinta == "3":
 			print("Tulos on:", luku1*luku2)
 		elif valinta == "4":
-			print("Tulos on:", luku1/luku2)
+			try:
+				print("Tulos on:", luku1/luku2)
+			except Exception:
+				print("Ei voi jakaa nollalla")
 		elif valinta == "5":
 			tulos = math.sin(luku1/luku2)
 			print("Tulos on:", tulos)
